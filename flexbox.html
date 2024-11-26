@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            border: 5px solid grey;
+        }
+        #item{
+            flex-basis: 200px;
+            background-color: aqua;
+            height: 200px;
+            border: 2px solid black;
+            /* flex-grow:1; */
+
+        }
+        .item1,.item6{
+           flex-grow: 5;
+        }
+        .item2,.item3,.item4,.item5,.item6{
+            flex-shrink: -10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="item1" id="item">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste ipsum tenetur id necessitatibus, est recusandae, repudiandae aut dolorum ratione accusantium harum alias ut quidem tempore voluptatum nesciunt at totam similique.</p>
+        </div>
+        <div class="item2" id="item"></div>
+        <div class="item3" id="item"></div>
+        <div class="item4" id="item"></div>
+        <div class="item5" id="item"></div>
+        <div class="item6" id="item">
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum nobis illum repellendus totam doloribus rem odio, enim non dignissimos natus vero? Id, blanditiis inventore aliquam atque eos architecto esse adipisci?</P>
+        </div>
+
+    </div>
+</body>
+</html>
